@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- Menu-->
+<div class="navbar">
+  <a href="#">Inicio</a>
+  <a href="#">Historial</a>
+  <a href="#">Configuraciones</a>
+  <a href="#">Cerrar</a>
+</div>
+
+    <div class="flex-container" >
+        <div class="box1">
+        <img src="photo.png" alt="" width="200px" height="200px" >
+        <h2>JOEL MINAYA</h2>
+
+
+    <!-- button Ingresos-->
+
+        <button class="button button1" id="myBtn">Ingresos</button>
+
+    <!--Contenido-->
+        <div id="myModal" class="modal">
+        <div class="modal-content">
+              <h1>gika</h1>
+
+    </div>
+  </div>
+
+    <!-- button gastos-->
+        <br>
+        <button class="button button2">Gastos</button> 
+        </div>
+
+
+    <!--Tablas-->
+        <div class="box2">
+             <!--Reporte de gastos-->
+            <h3>REPORTE DE GASTOS</h3>
+            <table id="t01">
+                <tr>
+                  <th>Ingresos</th>
+                  <th>Gastos</th> 
+                  <th>Balance</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+          
+              </table>
+              <br>
+             <!--Lista de ingresos-->
+            <h3>LISTA DE INGRESOS</h3>
+              <table id="t01">
+                <tr>
+                  <th>Fecha Monto</th>
+                  <th>Descripcion</th> 
+                  <th>Monto</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+
+              <!--Lista de ingresos-->
+              <h3>LISTA DE GASTOS</h3>
+              <table id="t01">
+                    <tr>
+                    <th>Fecha Monto</th>
+                    <th>Descripcion</th> 
+                    <th>Monto</th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </table>
+        </div>
+      </div>
+      <script>
+      
+      
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+      </script>
+</body>
+</html>
